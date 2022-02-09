@@ -17,14 +17,19 @@ html {
 
   }
   .todo-list {
-    background: rgba(238, 117, 232, 0.466);
+    display: flex;
+    background: rgba(238,117,232,.466);
+    border-radius: 39px;
     font-size: 15px;
-    width: 424px;
     height: 213px;
     margin: 5em;
     padding: 28px 16px;
-    border-radius: 39px;
-  }
+    width: 424px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
 $colorPink: #e95678;
 $colorPinkHover:#c23455;
 
@@ -170,4 +175,51 @@ animation: none $duration linear; //cubic-bezier(.08,.56,.04,.98);
       }
       }
       
-  
+      @media (max-width: 567px) {
+        .todo-list {
+          display: flex;
+          background: rgba(238,117,232,.466);
+          border-radius: 39px;
+          font-size: 15px;
+          height: 213px;
+          margin: 5em;
+          padding: 13px 16px;
+          width: 289px;
+          flex-direction: column;
+          justify-content: center;
+          align-content: stretch;
+          align-items: center;
+      }
+      }
+      @media (max-width: 375px) {
+        .todo-list {
+          display: flex;
+          background: rgba(238,117,232,.466);
+          border-radius: 39px;
+          font-size: 15px;
+          height: 213px;
+          margin: 4em;
+          padding: 13px 16px;
+          width: 289px;
+          flex-direction: column;
+          justify-content: center;
+          align-content: stretch;
+          align-items: center;
+      }
+    }
+      @media (max-width: 375px) {
+      .todo-list {
+        display: flex;
+        background: rgba(238,117,232,.466);
+        border-radius: 39px;
+        font-size: 15px;
+        height: 207px;
+        margin: 2em;
+        padding: 13px 16px;
+        width: 255px;
+        flex-direction: column;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+    }
+      }
